@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+    <html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación de Boda - Andrea & Alfonso</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos básicos para la página */
+        body {
+            background-color: #d5c2a8;
+            color: white;
+            margin: 0;
+            font-family: 'Playfair', serif;
+            overflow-x: hidden;
+        }
+
+        /* Estilo para el contenido de la página */
+        header, section {
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1, h2 {
+            font-size: 2cm;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Contenido principal -->
+    <header>
+
+    </header>
+
+      <!-- Sección de foto completa -->
+      <section class="full-photo">
+        <img src="2.png" alt="Foto 12">
+    </section>
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Invitación de Boda con Música</title>
+        <style>
+            body {
+                background-color: #d5c2a8;
+                color: white;
+                font-family: 'Playfair', serif;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <h1>¡Bienvenidos a nuestra invitación de boda!</h1>
+        
+        <!-- Reproductor de audio con barra de reproducción -->
+        <section id="musica">
+            <h2>Escucha nuestra canción</h2>
+            <audio controls>
+                <source src="Michael Bublé - Youre the First, the Last, My Everything (Official Audio).mp3" type="audio/mp3">
+                Tu navegador no soporta el elemento de audio.
+            </audio>
+        </section>
+    
+    </body>
+    </html>
+
+
+
+
+
+
+
+
+
+
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Invitación de Boda</title>
+        <style>
+          
+            /* Estilo de la cuenta regresiva */
+            #countdown {
+                font-size: 3em;
+                font-weight: bold;
+            }
+    
+            /* Estilo de las partes de la cuenta regresiva (días, horas, minutos, segundos) */
+            .countdown-part {
+                padding: 0 10px;
+            }
+    
+        </style>
+    </head>
+    <body>
+    
+        <div id="countdown">
+            <h1>Faltan</h1>
+            <div class="countdown-part" id="days"></div> días
+            <div class="countdown-part" id="hours"></div> horas
+            <div class="countdown-part" id="minutes"></div> minutos
+            <div class="countdown-part" id="seconds"></div> segundos
+        </div>
+    
+        <script>
+            // Fecha final de la cuenta regresiva (15 de noviembre de 2026)
+            const countdownDate = new Date("Nov 15, 2026 00:00:00").getTime();
+    
+            // Actualiza la cuenta regresiva cada segundo
+            const interval = setInterval(function() {
+                const now = new Date().getTime();
+                const distance = countdownDate - now;
+    
+                // Calcula el tiempo restante en días, horas, minutos y segundos
+                const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+    
+                // Muestra los resultados en los elementos correspondientes
+                document.getElementById("days").textContent = days;
+                document.getElementById("hours").textContent = hours;
+                document.getElementById("minutes").textContent = minutes;
+                document.getElementById("seconds").textContent = seconds;
+    
+                // Si la cuenta regresiva ha terminado, muestra un mensaje
+                if (distance < 0) {
+                    clearInterval(interval);
+                    document.getElementById("countdown").innerHTML = "¡Es el gran día!";
+                }
+            }, 1000);
+        </script>
+    
+    </body>
+    </html>
+    
+
+
+
+
+
+
+    <!-- Sección de fotos (2 fotos) -->
+    <section class="photo-section">
+        <div class="photo-container">
+            <img src="3.png" alt="Foto 1">
+            <img src="4.png" alt="Foto 2">
+        </div>
+    </section>
+
+    <!-- Sección de foto completa -->
+    <section class="full-photo">
+        <img src="5.png" alt="Foto 3">
+        <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Ubicacion</title>
+        <style>
+            /* Estilos generales para el cuerpo de la página */
+            body {
+                background-color: #d5c2a8;
+                color: white;
+                font-family: 'Playfair', serif;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                text-align: center;
+            }
+    
+            /* Estilos para los hipervínculos */
+            a {
+                color: white; /* Color de texto */
+                text-decoration: none; /* Elimina el subrayado por defecto */
+                font-size: 1.5em; /* Tamaño de la fuente */
+                font-weight: bold; /* Hacer el texto en negrita */
+                padding: 10px 20px; /* Espaciado alrededor del texto */
+                border-radius: 5px; /* Bordes redondeados */
+                background-color: #d5c2a8; /* Color de fondo */
+                transition: background-color 0.3s; /* Transición suave al cambiar el fondo */
+            }
+    
+            /* Estilo cuando el hipervínculo está en hover (cuando el mouse pasa por encima) */
+            a:hover {
+                background-color: #d5c2a8; /* Color de fondo al pasar el mouse */
+            }
+    
+            /* Estilos para las secciones */
+            section {
+                margin: 20px 0;
+            }
+    
+            h2 {
+                font-size: 4em;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Sección "ubicacion" -->
+        <section id="ubicacion">
+        <h2>Ubicación del Evento</h2>
+        <a href="https://maps.app.goo.gl/JuDo8FYQzdesxzgL7" target="_blank">Ver en Google Maps</a>
+    </section>
+    </body>
+    </html>   
+   
+    </section>
+
+    <!-- Sección de fotos (2 fotos) -->
+    <section class="photo-section">
+        <div class="photo-container">
+            <img src="7.png" alt="Foto 4">
+            <img src="8.png" alt="Foto 5">
+        </div>
+    </section>
+
+    <!-- Otra sección de fotos (2 fotos) -->
+    <section class="photo-section">
+        <div class="photo-container">
+            <img src="9.png" alt="Foto 6">
+            <img src="10.png" alt="Foto 7">
+           
+            
+                 <!-- Sección "No asistiré" -->
+                 <section id="no-asistire">
+                    <a href="https://api.whatsapp.com/send?phone=522222552966&text=Hola%2C+Gracias+por+la+invitaci%C3%B3n+pero+no+podre+asistir+a+la+boda." target="_blank">No asistiré</a>
+                 </section>
+                
+                <!-- Sección "Sí asistiré" -->
+                <section id="si-asistire">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeQ7OY0BiE9XvBaFVz9B2O-pk_X7LsK-5yvELSBnMfsRlfUvQ/viewform?usp=dialog" target="_blank">Asistiré</a>
+                </section>
+            
+                <!-- Sección "regalos" -->
+                <section id="regalos">
+                     <a href="https://www.liverpool.com.mx/tienda/home" target="_blank">Ver mesa de regalos</a>
+                 </section>
+                
+            </body>
+            </html>   
+        </div>
+    </section>
+
+    <!-- Foto final -->
+    <section class="full-photo">
+        <img src="11.png" alt="Foto 8">
+    </section>
+
+    <!-- Secciones para hipervínculos -->
+
+
+    <
+    <!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mesa de regalos</title>
+        <style>
+            /* Estilos generales para el cuerpo de la página */
+            body {
+                background-color: #d5c2a8;
+                color: white;
+                font-family: 'Playfair', serif;
+                margin: 0;
+                padding: 0;
+                height: 100vh;
+                text-align: center;
+            }
+    
+            /* Estilos para los hipervínculos */
+            a {
+                color: white; /* Color de texto */
+                text-decoration: none; /* Elimina el subrayado por defecto */
+                font-size: 1.5cm; /* Tamaño de la fuente */
+                font-weight: bold; /* Hacer el texto en negrita */
+                padding: 10px 20px; /* Espaciado alrededor del texto */
+                border-radius: 5px; /* Bordes redondeados */
+                background-color: #d5c2a8; /* Color de fondo */
+                transition: background-color 0.3s; /* Transición suave al cambiar el fondo */
+            }
+    
+            /* Estilo cuando el hipervínculo está en hover (cuando el mouse pasa por encima) */
+            a:hover {
+                background-color: #d5c2a8; /* Color de fondo al pasar el mouse */
+            }
+    
+            /* Estilos para las secciones */
+            section {
+                margin: 20px 0;
+            }
+    
+            h2 {
+                font-size: 2cm;
+            }
+        </style>
+    </head>
+    <body>
+    
+
+    <script src="scripts.js"></script>
+</body>
+</html>
